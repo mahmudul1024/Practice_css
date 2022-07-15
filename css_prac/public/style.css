@@ -1,41 +1,12 @@
-.stage{
-    width: 600px;
-    height: 300px;
+.box{
+    width: 300px;
+    
     background-color: antiquewhite;
-}
-
-.ball{
-    height: 50px;
-    width: 50px;
-    background-color: red;
-    border-radius: 29px;
-    animation: sliding 4s ease-in-out 2s infinite alternate ;
-    animation-play-state: running;
-    position: relative;
-}
-
-@keyframes sliding {
-    0%{
-        background-color: green;
-        left: 0px;
-        top: 0px;
-    }
-    25%{
-        top: 200px;
-    }
-    50%{
-        top:0px;
-        transform: scale(1);
-
-    }
-    75%{
-        top: 200px;
-    }
-    100%{
-        background-color: yellow;
-        left: 300px;
-        top: 0px;
-        transform: scale(0.5);
-
-    }
+    overflow: scroll;
+    margin-bottom: 10px;
+    float: left;
+    cursor:not-allowed;
+    
+    
+    margin: 10px;
 }
