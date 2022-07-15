@@ -1,25 +1,12 @@
-.fa-cart-arrow-down{
-    font-size: 30px;
+.box_container , .inner{
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    border: 2px solid khaki;
 }
 
-.btn{
-    font-size: 30px;
-    color:green;
-}
-
-.fa-star{
-    color: gold;
-    font-size: 25px;
-
-}
-
-p{
-    font-size: 25px;
-}
-a{
-    font-size: 30px;
-}
-
-.fa-google{
-    color:red;
+.inner{
+    background-color: orange;
+    transform:rotate(-45deg) scale(0.6) translate(100px,100px) ;
+    
 }
