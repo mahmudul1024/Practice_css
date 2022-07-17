@@ -10,57 +10,148 @@
     <script src="https://kit.fontawesome.com/2dbf784f3c.js" crossorigin="anonymous"></script>
 
     <title>React App</title>
+
+    <style>
+      .image_req {
+        width: 75%;
+        height: 200px;
+      }
+
+      .food {
+        border: 2px solid #000;
+        border-radius: 10px;
+        padding: 15px;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      /* smaller device */
+      @media screen and (max-width :576px) {
+        .food {
+          background-color: orange;
+
+        }
+
+        .container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+
+      /* medium device */
+
+      @media screen and (min-width: 577px) and (max-width:992px) {
+        .food {
+          background-color: green;
+        }
+
+      }
+    </style>
   </head>
   <body>
-    <div class="calender">
-      <div class="day">Su</div>
-      <div class="day">Mo</div>
-      <div class="day">Tu</div>
-      <div class="day">We</div>
-      <div class="day">Th</div>
-      <div class="day">Fr</div>
-      <div class="day">Sa</div>
 
-      <div class="date other_month">34</div>
-      <div class="date other_month">35</div>
-      <div class="date">1</div>
-      <div class="date">2</div>
-
-      <div class="date">3</div>
-      <div class="date">4</div>
-      <div class="date">5</div>
-      <div class="date">6</div>
-      <div class="date">7</div>
-      <div class="date">8</div>
-      <div class="date">9</div>
-      <div class="date">10</div>
-      <div class="date">11</div>
-      <div class="date">12</div>
-      <div class="date">13</div>
-      <div class="date">14</div>
-      <div class="date">15</div>
-      <div class="date">16</div>
-      <div class="date">17</div>
-      <div class="date">18</div>
-      <div class="date">19</div>
-      <div class="date">20</div>
-      <div class="date">21</div>
-      <div class="date">22</div>
-      <div class="date">23</div>
-      <div class="date">24</div>
-      <div class="date">25</div>
-      <div class="date">26</div>
-      <div class="date">27</div>
-      <div class="date">28</div>
-      <div class="date">29</div>
-      <div class="date">30</div>
-      <div class="date other_month">1</div>
-      <div class="date other_month">2</div>
-      <div class="date other_month">3</div>
-      <div class="date other_month">4</div>
+    <!-- .container>.food*12>img[src="images/food_1.jpg"]+h2{item$}+h4{price : 100 Taka}+p>lorem20^button{Order Now} -->
+    <div class="container">
+      <div class="food">
+        <img src="images/food_1.jpg" alt="" class="image_req">
+        <h2>item1</h2>
+        <h4>price : 100 Taka</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae cupiditate fugiat dolorem minus rerum qui
+          odio mollitia deleniti tempora provident?</p>
+        <button>Order Now</button>
+      </div>
+      <div class="food">
+        <img src="images/food_1.jpg" alt="" class="image_req">
+        <h2>item2</h2>
+        <h4>price : 100 Taka</h4>
+        <p>Itaque ut placeat odio eum, impedit eveniet dolorum modi temporibus asperiores, veritatis quisquam, facere
+          ipsam cum eligendi! Quam, veritatis odio!</p>
+        <button>Order Now</button>
+      </div>
+      <div class="food">
+        <img src="images/food_1.jpg" alt="" class="image_req">
+        <h2>item3</h2>
+        <h4>price : 100 Taka</h4>
+        <p>Aliquam, accusamus ea! Officia ipsam dolorum sunt pariatur! Quaerat deserunt veritatis velit. Eaque, eius in
+          obcaecati dolorum iste quaerat nobis?</p>
+        <button>Order Now</button>
+      </div>
+      <div class="food">
+        <img src="images/food_1.jpg" alt="" class="image_req">
+        <h2>item4</h2>
+        <h4>price : 100 Taka</h4>
+        <p>Tempore deleniti iste hic culpa cum, ab dolor a iure omnis unde, rem ducimus dolores esse ipsam sunt
+          voluptatum aut.</p>
+        <button>Order Now</button>
+      </div>
+      <div class="food">
+        <img src="images/food_1.jpg" alt="" class="image_req">
+        <h2>item5</h2>
+        <h4>price : 100 Taka</h4>
+        <p>Doloremque reiciendis sapiente blanditiis dolores veniam obcaecati deleniti recusandae atque, vero doloribus
+          ea debitis officia labore sint quibusdam ipsum rerum?</p>
+        <button>Order Now</button>
+      </div>
+      <div class="food">
+        <img src="images/food_1.jpg" alt="" class="image_req">
+        <h2>item6</h2>
+        <h4>price : 100 Taka</h4>
+        <p>Distinctio repudiandae rem fugiat odit sit iusto, animi, consequatur ullam ratione optio obcaecati
+          dignissimos vel fugit nisi accusantium quis doloremque.</p>
+        <button>Order Now</button>
+      </div>
+      <div class="food">
+        <img src="images/food_1.jpg" alt="" class="image_req">
+        <h2>item7</h2>
+        <h4>price : 100 Taka</h4>
+        <p>Accusamus recusandae beatae reprehenderit veritatis repellendus iusto aut tenetur quos, neque consectetur
+          error aperiam perspiciatis praesentium molestias vitae soluta tempora!</p>
+        <button>Order Now</button>
+      </div>
+      <div class="food">
+        <img src="images/food_1.jpg" alt="" class="image_req">
+        <h2>item8</h2>
+        <h4>price : 100 Taka</h4>
+        <p>Suscipit quam ut odit omnis velit? Nulla, magni ullam aspernatur voluptates facilis asperiores, hic cumque
+          sequi nisi, dignissimos quibusdam deserunt.</p>
+        <button>Order Now</button>
+      </div>
+      <div class="food">
+        <img src="images/food_1.jpg" alt="" class="image_req">
+        <h2>item9</h2>
+        <h4>price : 100 Taka</h4>
+        <p>Maxime pariatur, mollitia possimus voluptate, perferendis quidem suscipit autem porro et dignissimos qui
+          laboriosam labore nobis ipsa! Laudantium, illo non.</p>
+        <button>Order Now</button>
+      </div>
+      <div class="food">
+        <img src="images/food_1.jpg" alt="" class="image_req">
+        <h2>item10</h2>
+        <h4>price : 100 Taka</h4>
+        <p>Molestiae quasi eligendi accusamus voluptates repellat eum inventore. Assumenda quia nostrum ex eveniet autem
+          pariatur ducimus dignissimos numquam voluptas. Illo.</p>
+        <button>Order Now</button>
+      </div>
+      <div class="food">
+        <img src="images/food_1.jpg" alt="" class="image_req">
+        <h2>item11</h2>
+        <h4>price : 100 Taka</h4>
+        <p>Error itaque quae, ipsa eaque, aperiam repellendus maxime et, vitae minus aspernatur adipisci ullam natus
+          reiciendis. Nemo quia minus accusantium.</p>
+        <button>Order Now</button>
+      </div>
+      <div class="food">
+        <img src="images/food_1.jpg" alt="" class="image_req">
+        <h2>item12</h2>
+        <h4>price : 100 Taka</h4>
+        <p>Dolores delectus maiores eius sapiente! At culpa, accusamus natus illo ipsa hic id maiores laudantium, fugiat
+          veritatis dolorum laborum amet?</p>
+        <button>Order Now</button>
+      </div>
     </div>
-
-
 
 
   </body>
