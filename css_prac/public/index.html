@@ -26,6 +26,8 @@
   3.Resposive image(fluid Image)
   4.body max-width and margin auto
   5.Responsive split screen using flex
+  6.Grid Response (Multi column)
+  7.Responsive Menu (bootstrap responsive )--Future
 
 
 
@@ -43,11 +45,28 @@
 
       body {
         border: 5px solid grey;
-        width: 800px;
+        width: auto;
         margin: 0 auto;
 
       }
 
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+
+      .food {
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      /* image fluid */
+      .food img {
+        width: 100%;
+        border-radius: 5px;
+
+      }
 
       .container_two {
         display: flex;
@@ -64,18 +83,30 @@
 
       @media screen and (max-width:576px) {
 
+        .container {
+          grid-template-columns: repeat(1, 1fr);
+
+        }
+
         .container_two {
           flex-direction: column-reverse;
         }
 
         .container_two .split,
         .tiger_size {
-          width: 100vh;
+          width: 100%;
         }
 
-        body {
-          overflow-x: hidden
+      }
+
+
+      @media screen and (min-width:577px) and (max-width:700px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+
         }
+
+
 
       }
     </style>
@@ -100,6 +131,108 @@
         </div>
         <div class="split">
           <img src="./images/tiger.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Multi Collumn</h2>
+      <div class="container">
+        <div class="food">
+          <img src="images/food_1.jpg" alt="">
+          <h2>item1</h2>
+          <h4>price : 100 Taka</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi repellendus quam quibusdam sed aperiam,
+            magnam delectus tenetur officiis est. Necessitatibus!</p>
+          <button>Order Now</button>
+        </div>
+        <div class="food">
+          <img src="images/food_1.jpg" alt="">
+          <h2>item2</h2>
+          <h4>price : 100 Taka</h4>
+          <p>Labore aliquam harum totam nobis consectetur molestiae? Nemo molestiae reprehenderit voluptate corrupti,
+            pariatur suscipit soluta provident illo aperiam corporis culpa?</p>
+          <button>Order Now</button>
+        </div>
+        <div class="food">
+          <img src="images/food_1.jpg" alt="">
+          <h2>item3</h2>
+          <h4>price : 100 Taka</h4>
+          <p>Atque earum dolor autem sunt blanditiis. Culpa eveniet, consequuntur exercitationem, deserunt ea aut rerum
+            neque cum ducimus sapiente ipsum fuga.</p>
+          <button>Order Now</button>
+        </div>
+        <div class="food">
+          <img src="images/food_1.jpg" alt="">
+          <h2>item4</h2>
+          <h4>price : 100 Taka</h4>
+          <p>Similique accusamus ipsum veniam labore, ex nulla velit iusto placeat, unde animi neque, nam consequatur
+            fugiat quaerat porro quod molestiae!</p>
+          <button>Order Now</button>
+        </div>
+        <div class="food">
+          <img src="images/food_1.jpg" alt="">
+          <h2>item5</h2>
+          <h4>price : 100 Taka</h4>
+          <p>Accusantium ad expedita libero ut eaque exercitationem recusandae. Sint pariatur accusantium aliquam
+            perferendis laboriosam ducimus? Excepturi, eum nihil? Et, quidem!</p>
+          <button>Order Now</button>
+        </div>
+        <div class="food">
+          <img src="images/food_1.jpg" alt="">
+          <h2>item6</h2>
+          <h4>price : 100 Taka</h4>
+          <p>Enim quaerat doloribus delectus tempora laborum amet reiciendis? Magni recusandae vel officia dignissimos
+            quod assumenda hic! Doloribus cum natus culpa?</p>
+          <button>Order Now</button>
+        </div>
+        <div class="food">
+          <img src="images/food_1.jpg" alt="">
+          <h2>item7</h2>
+          <h4>price : 100 Taka</h4>
+          <p>Minus eum totam quis unde officiis alias provident natus officia quia quaerat doloremque dolores quo
+            dolorem, reprehenderit ex ipsam earum?</p>
+          <button>Order Now</button>
+        </div>
+        <div class="food">
+          <img src="images/food_1.jpg" alt="">
+          <h2>item8</h2>
+          <h4>price : 100 Taka</h4>
+          <p>Laborum mollitia nobis sunt corporis quos suscipit quam itaque, ad, quia eligendi natus repellat dolorem,
+            non laboriosam id eius delectus?</p>
+          <button>Order Now</button>
+        </div>
+        <div class="food">
+          <img src="images/food_1.jpg" alt="">
+          <h2>item9</h2>
+          <h4>price : 100 Taka</h4>
+          <p>Fuga iste atque nobis, molestiae tenetur dignissimos mollitia itaque odit neque? Aliquam assumenda in
+            aspernatur vel ab libero tempore sint.</p>
+          <button>Order Now</button>
+        </div>
+        <div class="food">
+          <img src="images/food_1.jpg" alt="">
+          <h2>item10</h2>
+          <h4>price : 100 Taka</h4>
+          <p>Dolores omnis debitis odio molestias expedita dolorum! Dolor, sapiente hic voluptate accusantium placeat
+            illo commodi suscipit tenetur assumenda deserunt sunt.</p>
+          <button>Order Now</button>
+        </div>
+        <div class="food">
+          <img src="images/food_1.jpg" alt="">
+          <h2>item11</h2>
+          <h4>price : 100 Taka</h4>
+          <p>A exercitationem reiciendis perferendis corporis commodi. Laborum ipsum facilis quia incidunt veniam
+            quisquam doloribus repellat! Laboriosam soluta aut dignissimos quaerat?</p>
+          <button>Order Now</button>
+        </div>
+        <div class="food">
+          <img src="images/food_1.jpg" alt="">
+          <h2>item12</h2>
+          <h4>price : 100 Taka</h4>
+          <p>A aliquam repudiandae quaerat ipsum earum? Facere iste ducimus culpa repellendus fugiat odit placeat quis
+            autem quibusdam, sint maxime debitis.</p>
+          <button>Order Now</button>
         </div>
       </div>
     </section>
