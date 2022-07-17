@@ -1,6 +1,7 @@
 {
   "name": "css_prac",
   "version": "0.1.0",
+  "homepage": "https://github.com/mahmudul1024/Practice_css/tree/main/css_prac/public/index.html",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -13,6 +14,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
